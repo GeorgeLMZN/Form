@@ -1,0 +1,128 @@
+small {
+  color: red;
+}
+input {
+  height: 2rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #000;
+}
+input:focus {
+    outline: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  height: 2rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #000;
+}
+select:focus {
+    outline: none;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.overlay .popup-success {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 60%;
+    height: 30%;
+    background: #fff;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    border-radius: 0.8rem;
+}
+.overlay .popup-success h1 {
+      font-size: 2.5rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.invalid {
+  border-bottom: 1px solid red;
+}
+.active {
+  display: block;
+}
+.main-header {
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 80rem;
+  margin: auto;
+  border: 1px solid #000;
+  border-radius: 1rem;
+}
+form .form-name-attributes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+form .form-name-attributes .sms_denial {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+}
+form .addBtn {
+    flex-basis: 100%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+}
+form .addBtn button {
+      padding: 1rem 4rem;
+      margin: auto;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+}
+@media screen and (max-width: 650px) {
+.form-name-attributes {
+    width: 80%;
+}
+.address {
+    width: 80%;
+}
+.doctypes {
+    width: 80%;
+}
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
